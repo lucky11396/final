@@ -1,0 +1,30 @@
+
+.star {
+display: table;
+float: right;
+margin-right: 20px;
+}
+.star > label {
+color: #FFD582;
+float: right;
+cursor: pointer;
+}
+.star >input:checked ~ label,
+.star:not(:checked) > label:hover,
+.star:not(:checked) > label:hover ~ label {
+color: #FFB521;
+}
+.star >input:checked ~ label:hover,
+. > label:hover ~ input:checked ~ label,
+.star > input:checked ~ label:hover ~ label {
+opacity: 0.5;
+}
+textarea{
+width: 100%;
+height: 120px;
+clear: both;
+margin:0 auto;
+border:2px #cccccc dashed;
+padding: 10px 20px;
+background-color:#F9F9F9;
+}
